@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Italiana", sans-serif;
+}
+
+.navbar-container{
+    display: flex;
+    background-color: #008C45;
+    color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.navbar-container a{
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+body{
+    background-image: url(/assets/20302-Colosseum.webp);
+    background-size: cover;
+}
+
+.container{
+
+    width: 600px;
+    height: 500px;
+    padding: 2rem;
+    background-color: #008C45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    
+}
+
+h2{
+    font-size: 1.8rem;
+    
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+}
+
+
+.container h2 {
+    margin-bottom: 10px;
+}
+
+
+.container p {
+    font-size: 1.7rem;   
+    margin-bottom: 25px; 
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+.container a {
+    color: aliceblue; 
+    text-decoration: none; 
+}

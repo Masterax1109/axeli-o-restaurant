@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Italiana", sans-serif;
+}
+
+.navbar-container{
+    display: flex;
+    background-color: #008C45;
+    color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    
+}
+
+.navbar-container a{
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container-img {
+    position: relative;
+}
+
+.container-img img {
+    width: 100%;
+    height: 700px;
+    display: block;
+    filter: brightness(60%);
+}
+
+.container-img h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem; 
+    text-shadow: 5px 5px 5px black; 
+    width: 100%; 
+    text-align: center;
+}
+
+.bandera-bg {
+    display: flex;
+    width: 100%;
+}
+
+.columna.blanca {
+    flex: 4; 
+}
+
+.columna.verde,
+.columna.roja {
+    flex: 1; 
+}
+
+
+
+.columna.verde {
+    background-color: #008C45;
+}
+
+.columna.blanca {
+    background-color: #F4F5F0;
+}
+
+.columna.roja {
+    background-color: #CD212A;
+}
+
+.Entradas {
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+
+.Entradas-opciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; 
+    margin-top: 30px;
+    
+}
+
+.menu-entradas {
+    width: 300px; 
+    border: 2px solid black; 
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-entradas:hover{
+    transform: translateY(-5px); 
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.20);
+}
+
+.menu-entradas .descripcion,
+.menu-fuerte .descripcion,
+.menu-postre .descripcion{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #f8f8f8;
+    padding: 0 15px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    opacity: 0; 
+    transform: translateY(10px); 
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    pointer-events: none;
+}
+
+.menu-entradas:hover .descripcion,
+.menu-fuerte:hover .descripcion,
+.menu-postre:hover .descripcion {
+    opacity: 1;
+    transform: translateY(0); 
+    pointer-events: auto;
+}
+
+.menu-entradas img {
+    width: 100%; 
+    display: block
+}
+
+
+.menu-entradas h4 {
+    padding: 15px;      
+    margin: 0;          
+    text-align: center;
+    border-top: 2px solid black; 
+}
+
+.Plato-fuerte {
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+.Plato_fuerte-opciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; 
+    margin-top: 30px;
+    
+}
+
+.menu-fuerte {
+    width: 300px; 
+    border: 2px solid black; 
+    border-radius: 8px;
+    overflow: hidden;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-fuerte:hover{
+    transform: translateY(-5px); 
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.20);
+}
+
+.menu-fuerte img {
+    width: 100%; 
+    display: block; 
+}
+
+
+.menu-fuerte h4 {
+    padding: 15px;      
+    margin: 0;          
+    text-align: center;
+    border-top: 2px solid black; 
+}
+
+.Postres {
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+.Postres-opciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; 
+    margin-top: 30px;
+}
+
+.menu-postre {
+    width: 300px; 
+    border: 2px solid black; 
+    border-radius: 8px;
+    overflow: hidden;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-postre:hover{
+    transform: translateY(-5px); 
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.20);
+}
+
+.menu-postre img {
+    width: 100%; 
+    display: block; 
+    
+}
+
+
+.menu-postre h4 {
+    padding: 15px;      
+    margin: 0;          
+    text-align: center;
+    border-top: 2px solid black; 
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #008C45;
+    padding: 8px;
+}
+footer h4{
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+
